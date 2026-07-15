@@ -1,1 +1,496 @@
 
+*{
+    Margin:0;
+    Padding:0;
+    Box-sizing:border-box;
+}
+
+Html{
+    Scroll-behavior:smooth;
+}
+
+Body{
+    Font-family:’Poppins’,sans-serif;
+    Background:#f8f9fa;
+    Color:#333;
+    Line-height:1.7;
+}
+
+.container{
+    Width:90%;
+    Max-width:1200px;
+    Margin:auto;
+}
+
+/* Navigation */
+
+Header{
+    Position:fixed;
+    Width:100%;
+    Top:0;
+    Left:0;
+    Background:#ffffff;
+    Box-shadow:0 2px 15px rgba(0,0,0,.12);
+    z-index:1000;
+}
+
+.navbar{
+    Display:flex;
+    Justify-content:space-between;
+    Align-items:center;
+    Padding:18px 0;
+}
+
+.logo h2{
+    Color:#1b5e20;
+    Font-size:30px;
+    Font-weight:700;
+}
+
+.nav-links{
+    Display:flex;
+    List-style:none;
+}
+
+.nav-links li{
+    Margin-left:25px;
+}
+
+.nav-links a{
+    Text-decoration:none;
+    Color:#222;
+    Font-weight:500;
+    Transition:.3s;
+}
+
+.nav-links a:hover{
+    Color:#2e7d32;
+}
+
+.menu-btn{
+    Display:none;
+    Font-size:28px;
+    Cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+    Height:100vh;
+    Background:url(“assets/images/hero.jpg”) center center/cover no-repeat;
+}
+
+.overlay{
+    Width:100%;
+    Height:100%;
+    Background:rgba(0,70,30,.72);
+    Display:flex;
+    Justify-content:center;
+    Align-items:center;
+    Text-align:center;
+}
+
+.hero-content{
+    Color:white;
+    Width:80%;
+}
+
+.hero-content h1{
+    Font-size:55px;
+    Margin-bottom:25px;
+}
+
+.hero-content p{
+    Font-size:22px;
+    Margin-bottom:35px;
+}
+
+.btn{
+    Display:inline-block;
+    Padding:14px 35px;
+    Background:#2e7d32;
+    Color:white;
+    Text-decoration:none;
+    Border-radius:50px;
+    Margin:10px;
+    Transition:.4s;
+}
+
+.btn:hover{
+    Background:#f9a825;
+    Transform:translateY(-4px);
+}
+
+.btn2{
+    Background:#f9a825;
+}
+
+.btn2:hover{
+    Background:#2e7d32;
+}
+
+/* Sections */
+
+Section{
+    Padding:90px 0;
+}
+
+Section h2{
+    Text-align:center;
+    Font-size:38px;
+    Color:#1b5e20;
+    Margin-bottom:50px;
+}
+
+/* About */
+
+.about-grid{
+    Display:grid;
+    Grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    Gap:30px;
+    Margin-top:40px;
+}
+
+.card{
+    Background:white;
+    Padding:35px;
+    Border-radius:12px;
+    Box-shadow:0 10px 25px rgba(0,0,0,.08);
+    Transition:.4s;
+}
+
+.card:hover{
+    Transform:translateY(-10px);
+}
+
+.card i{
+    Font-size:50px;
+    Color:#2e7d32;
+    Margin-bottom:20px;
+}
+
+.card h3{
+    Margin-bottom:15px;
+}
+
+/* Core Values */
+
+.value-grid{
+    Display:grid;
+    Grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    Gap:25px;
+}
+
+.value-box{
+    Background:#2e7d32;
+    Color:white;
+    Padding:30px;
+    Border-radius:12px;
+    Text-align:center;
+    Transition:.4s;
+}
+
+.value-box:hover{
+    Background:#f9a825;
+}
+
+/* Objectives */
+
+.objectives{
+    Background:#eef7ef;
+}
+
+.objectives ol{
+    Max-width:900px;
+    Margin:auto;
+}
+
+.objectives li{
+    Margin-bottom:18px;
+    Font-size:18px;
+}
+
+/* Programmes */
+
+.program-grid{
+    Display:grid;
+    Grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    Gap:30px;
+}
+
+.program-card{
+    Background:white;
+    Padding:35px;
+    Border-radius:12px;
+    Text-align:center;
+    Box-shadow:0 8px 20px rgba(0,0,0,.1);
+    Transition:.4s;
+}
+
+.program-card:hover{
+    Transform:translateY(-10px);
+}
+
+.program-card i{
+    Font-size:55px;
+    Color:#2e7d32;
+    Margin-bottom:20px;
+}
+/* =====================================
+   BENEFICIARIES
+===================================== */
+
+.beneficiaries{
+    Background:#ffffff;
+}
+
+.beneficiary-grid{
+    Display:grid;
+    Grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    Gap:30px;
+    Margin-top:40px;
+}
+
+/* =====================================
+   LEADERSHIP
+===================================== */
+
+.leadership{
+    Background:#f5f9f5;
+}
+
+.team-grid{
+    Display:grid;
+    Grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    Gap:30px;
+    Margin-top:40px;
+}
+
+.team-card{
+    Background:#fff;
+    Border-radius:15px;
+    Overflow:hidden;
+    Text-align:center;
+    Box-shadow:0 10px 25px rgba(0,0,0,.1);
+    Transition:.4s;
+}
+
+.team-card:hover{
+    Transform:translateY(-10px);
+}
+
+.team-card img{
+    Width:100%;
+    Height:280px;
+    Object-fit:cover;
+}
+
+.team-card h3{
+    Margin:20px 0 10px;
+    Color:#1b5e20;
+}
+
+.team-card p{
+    Padding-bottom:25px;
+    Color:#666;
+}
+
+/* =====================================
+   BOARD
+===================================== */
+
+.board{
+    Background:#ffffff;
+}
+
+.board ul{
+    Max-width:700px;
+    Margin:auto;
+    List-style:none;
+}
+
+.board li{
+    Background:#eef7ef;
+    Margin:15px 0;
+    Padding:18px 25px;
+    Border-left:6px solid #2e7d32;
+    Border-radius:8px;
+    Font-size:18px;
+}
+
+/* =====================================
+   CALL TO ACTION
+===================================== */
+
+.cta{
+    Background:linear-gradient(rgba(27,94,32,.92),
+    Rgba(27,94,32,.92)),
+    url(“assets/images/cta.jpg”) center/cover;
+    color:white;
+    text-align:center;
+}
+
+.cta h2{
+    Color:white;
+    Font-size:42px;
+}
+
+.cta p{
+    Max-width:800px;
+    Margin:25px auto 40px;
+    Font-size:20px;
+}
+
+/* =====================================
+   CONTACT
+===================================== */
+
+.contact-grid{
+    Display:grid;
+    Grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    Gap:50px;
+    Margin-top:40px;
+}
+
+.contact h3{
+    Color:#2e7d32;
+    Margin-bottom:10px;
+}
+
+.contact p{
+    Margin-bottom:12px;
+}
+
+Form input,
+Form textarea{
+    Width:100%;
+    Padding:15px;
+    Margin-bottom:20px;
+    Border:1px solid #ccc;
+    Border-radius:8px;
+    Font-size:16px;
+    Font-family:Poppins,sans-serif;
+}
+
+Form textarea{
+    Resize:vertical;
+}
+
+Form button{
+    Border:none;
+    Cursor:pointer;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+Footer{
+    Background:#1b5e20;
+    Color:white;
+    Text-align:center;
+    Padding:50px 20px;
+}
+
+Footer h2{
+    Color:white;
+    Margin-bottom:20px;
+}
+
+Footer p{
+    Margin:10px 0;
+}
+
+/* =====================================
+   ANIMATIONS
+===================================== */
+
+.card,
+.program-card,
+.team-card,
+.value-box,
+.btn{
+    Transition:all .4s ease;
+}
+
+.card:hover,
+.program-card:hover,
+.team-card:hover,
+.value-box:hover{
+    Box-shadow:0 18px 35px rgba(0,0,0,.18);
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media(max-width:992px){
+
+.hero-content h1{
+    Font-size:42px;
+}
+
+.hero-content p{
+    Font-size:18px;
+}
+
+.nav-links{
+    Display:none;
+}
+
+.menu-btn{
+    Display:block;
+}
+
+}
+
+@media(max-width:768px){
+
+Section{
+    Padding:70px 20px;
+}
+
+.hero-content h1{
+    Font-size:34px;
+}
+
+.hero-content p{
+    Font-size:17px;
+}
+
+Section h2{
+    Font-size:30px;
+}
+
+.btn{
+    Display:block;
+    Width:220px;
+    Margin:15px auto;
+    Text-align:center;
+}
+
+}
+
+@media(max-width:480px){
+
+.logo h2{
+    Font-size:24px;
+}
+
+.hero-content h1{
+    Font-size:28px;
+}
+
+.hero-content p{
+    Font-size:16px;
+}
+
+.card,
+.program-card,
+.team-card,
+.value-box{
+    Padding:25px;
+}
+
+}
+

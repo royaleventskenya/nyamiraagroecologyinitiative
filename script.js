@@ -1,17 +1,18 @@
 // Mobile Navigation
-Const menuBtn = document.querySelector(“.menu-btn”);
-Const navLinks = document.querySelector(“.nav-links”);
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
 
-menuBtn.addEventListener(“click”, () => {
-    navLinks.classList.toggle(“active”);
-});
-
-// Close menu when a link is clicked
-Document.querySelectorAll(“.nav-links a”).forEach(link => {
-    Link.addEventListener(“click”, () => {
-        navLinks.classList.remove(“active”);
+if (menuBtn && navLinks) {
+    menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
     });
-});
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+        });
+    });
+}
 
 // Sticky Navigation
 Window.addEventListener(“scroll”, () => {

@@ -1,133 +1,159 @@
+/* ================================
+   RESET
+================================ */
 
 *{
-    Margin:0;
-    Padding:0;
-    Box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-Html{
-    Scroll-behavior:smooth;
+/* ================================
+   BRAND COLOURS
+================================ */
+
+:root{
+    --primary:#D4A017;      /* Gold */
+    --secondary:#2B2B2B;    /* Charcoal Black */
+    --white:#FFFFFF;
+    --light:#F5F5F5;
+    --dark:#6B6B6B;
+    --shadow:0 10px 25px rgba(0,0,0,.10);
+    --transition:.4s ease;
 }
 
-Body{
-    Font-family:’Poppins’,sans-serif;
-    Background:#f8f9fa;
-    Color:#333;
-    Line-height:1.7;
+/* ================================
+   GLOBAL
+================================ */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.7;
 }
 
 .container{
-    Width:90%;
-    Max-width:1200px;
-    Margin:auto;
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 }
 
-/* Navigation */
+/* ================================
+   NAVIGATION
+================================ */
 
-Header{
-    Position:fixed;
-    Width:100%;
-    Top:0;
-    Left:0;
-    Background:#ffffff;
-    Box-shadow:0 2px 15px rgba(0,0,0,.12);
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:var(--white);
+    box-shadow:0 2px 15px rgba(0,0,0,.12);
     z-index:1000;
 }
 
 .navbar{
-    Display:flex;
-    Justify-content:space-between;
-    Align-items:center;
-    Padding:18px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
 }
 
 .logo h2{
-    Color:#1b5e20;
-    Font-size:30px;
-    Font-weight:700;
+    color:var(--primary);
+    font-size:30px;
+    font-weight:700;
 }
 
 .nav-links{
-    Display:flex;
-    List-style:none;
+    display:flex;
+    list-style:none;
 }
 
 .nav-links li{
-    Margin-left:25px;
+    margin-left:25px;
 }
 
 .nav-links a{
-    Text-decoration:none;
-    Color:#222;
-    Font-weight:500;
-    Transition:.3s;
+    text-decoration:none;
+    color:var(--secondary);
+    font-weight:500;
+    transition:var(--transition);
 }
 
 .nav-links a:hover{
-    Color:#2e7d32;
+    color:var(--primary);
 }
 
 .menu-btn{
-    Display:none;
-    Font-size:28px;
-    Cursor:pointer;
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+    color:var(--secondary);
 }
-
-/* Hero */
+/* ================================
+   HERO
+================================ */
 
 .hero{
-    Height:100vh;
-    Background:url(“assets/images/hero.jpg”) center center/cover no-repeat;
+    height:100vh;
+    background:url("assets/images/hero.jpg") center center/cover no-repeat;
 }
 
 .overlay{
-    Width:100%;
-    Height:100%;
-    Background:rgba(0,70,30,.72);
-    Display:flex;
-    Justify-content:center;
-    Align-items:center;
-    Text-align:center;
+    width:100%;
+    height:100%;
+    background:rgba(43,43,43,.78);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
 
 .hero-content{
-    Color:white;
-    Width:80%;
+    width:80%;
+    color:var(--white);
 }
 
 .hero-content h1{
-    Font-size:55px;
-    Margin-bottom:25px;
+    font-size:55px;
+    margin-bottom:25px;
 }
 
 .hero-content p{
-    Font-size:22px;
-    Margin-bottom:35px;
+    font-size:22px;
+    margin-bottom:35px;
 }
 
 .btn{
-    Display:inline-block;
-    Padding:14px 35px;
-    Background:#2e7d32;
-    Color:white;
-    Text-decoration:none;
-    Border-radius:50px;
-    Margin:10px;
-    Transition:.4s;
+    display:inline-block;
+    padding:14px 35px;
+    background:var(--primary);
+    color:var(--white);
+    text-decoration:none;
+    border-radius:50px;
+    margin:10px;
+    transition:var(--transition);
 }
 
 .btn:hover{
-    Background:#f9a825;
-    Transform:translateY(-4px);
+    background:var(--secondary);
+    transform:translateY(-4px);
 }
 
 .btn2{
-    Background:#f9a825;
+    background:var(--secondary);
 }
 
 .btn2:hover{
-    Background:#2e7d32;
+    background:var(--primary);
 }
+
 
 /* Sections */
 
